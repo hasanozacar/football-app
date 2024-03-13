@@ -1,0 +1,32 @@
+version: "3"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: football-app
+    environment:
+      - PORT=3000
+      - SECRET_KEY=mysecretkey
+      - JWT_SECRET_KEY=mysecretkey
+      - MONGODB_URI=mongodb://mongo:27017/football-app
+    container_name: football-app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongo
+    networks:
+      - my-network
+
+  mongo:
+    image: mongo:latest
+    container_name: my-mongodb
+    ports:
+      - "27017:27017"
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    driver: bridge

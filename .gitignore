@@ -1,0 +1,64 @@
+# dependencies
+/node_modules
+
+# production build
+/build
+
+# dotenv environment variables file
+.env
+
+# IDE files
+/.vscode
+/.idea
+
+# macOS
+.DS_Store
+
+# npm debugging log
+npm-debug.log*
+
+# yarn lock file
+yarn.lock
+
+# testing
+/coverage
+
+# .env.local
+.env.local
+
+# dotenv override files
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Next.js build output
+.next/
+
+# Nuxt.js build output
+.nuxt/
+
+# Vuepress build output
+.vuepress/dist/
+
+# Serverless directories
+.serverless/
+
+# RedwoodJS
+.redwood/
+web/public/
+
+# SvelteKit
+__svelte__/
+
+# Rollup.js build output
+/dist/
+
+# Yarn
+.pnp/
+.pnp.js
+
+# Debug log
+debug.log
+
+# Parcel.js cache (https://parceljs.org/)
+.cache/
