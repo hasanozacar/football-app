@@ -23,6 +23,8 @@ yarn.lock
 # testing
 /coverage
 
+
+/actions-runner
 # .env.local
 .env.local
 
